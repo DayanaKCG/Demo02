@@ -4,20 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLibrary
+namespace MyLibrary;
+public class Product(int id, string name, decimal uuntPrince, int unitsInStock)
 {
-	public class Product
-	{
-		private int Id_Field;
-		public int Id
-		{
-			get { return Id_Field; }
-			set { Id_Field = value; }
-		}
-
-		public string? Name;
-		public decimal UnitPrice;
-		public int UnitsInStock;
-
-	}
+	//propiedades
+	public int Id { get; } = id;
+	public string Name { get; } = name;
+	public decimal UnitPrice { get; } = decimal.Zero;
+	public int UnitsInStock { get; } = unitsInStock;
 }

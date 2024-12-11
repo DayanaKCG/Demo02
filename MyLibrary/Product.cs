@@ -13,3 +13,10 @@ public class Product(int id, string name, decimal unitPrice, int unitsInStock)
 	public decimal UnitPrice => unitPrice;
 	public int UnitsInStock => unitsInStock;
 }
+
+public class Product2(int id, string name, decimal unitPrice, int unitsInStock,
+	bool discontinued)
+	: Product(id, name, unitPrice, unitsInStock)
+{
+	public bool Disconinued { get; set; } = discontinued;
+}

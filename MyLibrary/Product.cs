@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MyLibrary;
-public class Product(int id, string name, decimal uuntPrince, int unitsInStock)
+public class Product(int id, string name, decimal unitPrice, int unitsInStock)
 {
 	//propiedades
-	public int Id { get; } = id;
-	public string Name { get; } = name;
-	public decimal UnitPrice { get; } = decimal.Zero;
-	public int UnitsInStock { get; } = unitsInStock;
+	public int Id => id;
+	public string Name => name;
+	public decimal UnitPrice => unitPrice;
+	public int UnitsInStock => unitsInStock;
 }

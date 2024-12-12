@@ -17,6 +17,8 @@ public class Product(int id, string name, decimal unitPrice, int unitsInStock)
 	public void SetDiscontinued() =>
 		Discontinued = true;
 
+	public bool GetStatus() => Discontinued;
+
 }
 
 

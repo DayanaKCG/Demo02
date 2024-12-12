@@ -16,7 +16,7 @@ public class Product(int id, string name, decimal unitPrice, int unitsInStock)
 
 public class Product2(int id, string name, decimal unitPrice, int unitsInStock,
 	bool discontinued)
-	: Product(id, name, unitPrice, unitsInStock)
+	: Product(id, name, default, default)
 {
 	public bool Disconinued { get; set; } = discontinued;
 }

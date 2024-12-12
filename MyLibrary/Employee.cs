@@ -10,7 +10,15 @@ namespace MyLibrary
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
-		public abstract decimal CalculateMonthlyPayment();
+
+		public int GetInt()
+		{
+			return 5;
+		}
+		public virtual decimal CalculateMonthlyPayment()
+		{
+			return  12000;
+		}
 		
 	}
 
@@ -24,7 +32,11 @@ namespace MyLibrary
 	{
 		public override decimal CalculateMonthlyPayment()
 		{
-			throw new NotImplementedException();
+			return 30000;
 		}
+	}
+	public class Developer : Employee
+	{
+
 	}
 }

@@ -28,7 +28,7 @@ namespace MyLibrary
 		
 	}
 
-	public class Mannager : Employee
+	public class Manager : Employee
 	{
 		public override decimal CalculateMonthlyPayment()
 		{

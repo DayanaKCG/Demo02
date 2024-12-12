@@ -12,11 +12,17 @@ public class Product(int id, string name, decimal unitPrice, int unitsInStock)
 	public string Name => name;
 	public decimal UnitPrice => unitPrice;
 	public int UnitsInStock => unitsInStock;
+
+	public bool Discontinued { get; private set; }
+	public void SetDiscontinued() =>
+		Discontinued = true;
+
 }
 
-public class Product2(int id, string name, decimal unitPrice, int unitsInStock,
-	bool discontinued)
-	: Product(id, name, default, default)
-{
-	public bool Disconinued { get; set; } = discontinued;
-}
+
+//public class Product2(int id, string name, decimal unitPrice, int unitsInStock,
+//bool discontinued)
+//: Product(id, name, default, default)
+//{
+//public bool Disconinued { get; set; } = discontinued;
+//}

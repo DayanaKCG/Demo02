@@ -42,6 +42,10 @@ namespace MyLibrary
 	}
 	public class Developer : Employee
 	{
+		public new int GetPaymentDays()
+		{
+			return 20;
+		}
 		
 	}
 }

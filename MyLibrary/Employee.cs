@@ -19,6 +19,11 @@ namespace MyLibrary
 		{
 			return  12000;
 		}
+
+		public int GetPaymentDays()
+		{
+			return 30;
+		}
 		
 	}
 
@@ -37,6 +42,6 @@ namespace MyLibrary
 	}
 	public class Developer : Employee
 	{
-
+		
 	}
 }
